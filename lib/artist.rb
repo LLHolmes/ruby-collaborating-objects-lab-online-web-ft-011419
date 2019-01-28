@@ -26,8 +26,6 @@ class Artist
   def self.find_or_create_by_name(artist_name)
     
     artist = self.all.detect { |instance| instance.name == artist_name }
-      name == a.name
-    end
     artist || Artist.new(artist_name)
     
     # if (self.all.detect { |instance| instance.name = artist_name }.nil?)
